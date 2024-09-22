@@ -25,7 +25,7 @@ function Navbar() {
         </Link>
       </div>
       <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={1000}>
-        <div className={styles.right}>Contact Us</div>
+        <div className={styles.right}>Inquiry</div>
       </Link>
     </div>
   );

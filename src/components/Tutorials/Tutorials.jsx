@@ -23,21 +23,24 @@ function Tutorials() {
 
   return (
     <div className={styles.container} id="classes">
-      <div className={styles.heading}>Classes We Offer</div>
-      <div className="relative flex w-[80%] mx-auto">
-        {classes.map((item, index) => (
-          <div className={styles.videoContainer} key={index} data-aos="fade-up">
-            <HeroVideoDialog
-              className="dark:hidden w-full h-full"
-              animationStyle="from-center"
-              videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-              thumbnailSrc={item.imgUrl}
-              thumbnailAlt="Hero Video"
-            />
-          </div>
-        ))}
+  <div className={styles.heading}>Classes We Offer</div>
+
+  <div className="relative flex flex-wrap justify-center w-[90%] md:w-[80%] mx-auto gap-4">
+    {classes.map((item, index) => (
+      <div className={styles.videoContainer} key={index} data-aos="fade-up">
+        <HeroVideoDialog
+          className="dark:hidden w-full h-full"
+          animationStyle="from-center"
+          videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+          thumbnailSrc={item.imgUrl}
+          thumbnailAlt="Hero Video"
+        />
+        <div className={styles.videoTitle}>{item.title}</div>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
   );
 }
 

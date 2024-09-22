@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 20px;
   margin-top: 50px;
+  height: auto;
+  /* border: 1px solid red; */
 }
 
 .title {
@@ -18,7 +20,7 @@
   justify-content: center;
   gap: 30px; /* Use gap only if supported; otherwise, use margin on cards */
   width: 100%;
-  height: 500px;
+  height: auto;
   /* border: 1px solid red; */
 }
 
@@ -27,7 +29,7 @@
   text-align: center;
   margin: 0 15px; /* Adjust margin for spacing */
   width: 20%;
-  height: 100%;
+  height: 500px;
   /* border: 1px solid red; */
   overflow: hidden;
 }
