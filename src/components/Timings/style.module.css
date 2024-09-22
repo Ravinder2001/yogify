@@ -1,0 +1,57 @@
+/* yogaTimings.module.css */
+
+.yogaTimings {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: var(--background);
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.timingGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.timingCard {
+  cursor: pointer;
+  background-color: var(--background);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--boxShadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 300px; /* Adjust for responsiveness */
+}
+
+.timingCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.className {
+  font-size: 24px;
+  /* font-weight: bold; */
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 20px;
+  color: #ff6347; /* Tomato color for the time */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.details {
+  font-size: 16px;
+  color: #666;
+}

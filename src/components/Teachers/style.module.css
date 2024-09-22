@@ -1,0 +1,58 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.teacherGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Use gap only if supported; otherwise, use margin on cards */
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid red; */
+}
+
+.teacherCard {
+  flex: 1 1 250px; /* Flex-grow, flex-shrink, and a base width */
+  text-align: center;
+  margin: 0 15px; /* Adjust margin for spacing */
+  width: 20%;
+  height: 100%;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+
+.teacherImage {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.teacherName {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.teacherRole {
+  font-size: 18px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .teacherCard {
+    flex: 1 1 200px; /* Adjust base width for smaller screens */
+  }
+}
