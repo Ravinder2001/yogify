@@ -1,5 +1,5 @@
 let ENVConfig = {
-  cloudinaryCloudName: process.env.CLOUDINARY_CLOUD_NAME,
+  cloudinaryCloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
   postgresURL: process.env.POSTGRES_URL,
   postgresSSL: false,
   nextAuthSecret: process.env.NEXTAUTH_SECRET,
