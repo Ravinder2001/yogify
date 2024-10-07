@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import axios from "axios";
+import ENVConfig from "../../utils/config";
 
 function Timings() {
   const [timings, setTimings] = useState(null); // State to store timings
@@ -10,7 +11,7 @@ function Timings() {
     // Fetch the timings from the server
     const fetchTimings = async () => {
       try {
-        const res = await axios.get("/api/timing");
+        const res = await axios.get(`${ENVConfig.baseURL}/api/timing`);
         if (res?.status === 200) {
           setTimings(res.data?.data); // Set the fetched timings in state
         }
