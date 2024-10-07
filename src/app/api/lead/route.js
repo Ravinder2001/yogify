@@ -9,10 +9,10 @@ let ID = ENVConfig.rowID;
 export const POST = async (request) => {
   try {
     // Get the user session
-    const userSession = await getServerSession(authoptions);
-    if (!userSession) {
-      return new Response("Unauthorized", { status: 401 });
-    }
+    // const userSession = await getServerSession(authoptions);
+    // if (!userSession) {
+    //   return new Response("Unauthorized", { status: 401 });
+    // }
 
     // Parse request body
     const body = await request.json();
