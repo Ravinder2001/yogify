@@ -31,11 +31,14 @@
 }
 
 .right {
-  font-size: 16px;
-  background-color: var(--mainColor);
-  color: var(--background);
-  padding: 5px 12px;
-  border-radius: var(--borderRadius);
+  display: flex;
+  gap: 20px;
+}
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
   cursor: pointer;
 }
 
@@ -54,9 +57,9 @@
     font-size: 30px; /* Adjust the font size for smaller screens */
   }
 
-  .right {
-    font-size: 14px; /* Reduce size of the right section for better fit */
-    padding: 4px 10px; /* Adjust padding */
+  .img {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -69,8 +72,4 @@
     font-size: 24px; /* Further reduce font size for very small screens */
   }
 
-  .right {
-    font-size: 16px;
-    padding: 3px 8px; /* Further adjust padding for smaller screens */
-  }
 }

@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/app/api/auth/[...nextauth]/route.js", "src/middleware.js", "src/app/admin/page.jsx", "src/app/admin/layout.jsx", "src/app/admin/dashboard/layout.jsx", "src/app/api/timing/route.js"  ],
   "exclude": [
     "node_modules"
   ]

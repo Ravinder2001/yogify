@@ -1,0 +1,43 @@
+/* style.module.css */
+.container {
+  padding: 20px;
+}
+
+.title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeField {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.submitButton {
+  margin-top: 20px;
+  /* align-self: center; */
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .timeField {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+}

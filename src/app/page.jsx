@@ -7,6 +7,7 @@ import { MarqueeDemo } from "../components/Reviews/Review";
 import Teachers from "../components/Teachers/Teachers";
 import Timings from "../components/Timings/Timings";
 import Tutorials from "../components/Tutorials/Tutorials";
+import Footer from "../components/Footer/Footer";
 
 
 function page() {
@@ -18,8 +19,9 @@ function page() {
       <Timings/>
       <AboutUs/>
       <Teachers/>
-      <MarqueeDemo/>
+      {/* <MarqueeDemo/> */}
       <ContactUs/>
+      <Footer/>
     </div>
   );
 }

@@ -2,8 +2,15 @@
 import React from "react";
 import styles from "./style.module.css";
 import { Link } from "react-scroll";
+import whatsIcon from "../../assets/images/whatsapp.png";
+import emailIcon from "../../assets/images/email.png";
+import Image from "next/image";
+import ENVConfig from "../../utils/config";
 
 function Navbar() {
+  const handleWhatsapp = () => {
+    window.open(`https://wa.me/${ENVConfig.mobile}`, "_blank");
+  };
   return (
     <div className={styles.container}>
       <div className={styles.left}>Breathe Yoga</div>
@@ -24,9 +31,12 @@ function Navbar() {
           <div className={styles.label}>Teachers</div>
         </Link>
       </div>
-      <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={1000}>
-        <div className={styles.right}>Inquiry</div>
-      </Link>
+      <div className={styles.right}>
+        <Image src={whatsIcon} alt="" className={styles.img} onClick={handleWhatsapp} />
+        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-100} duration={1000}>
+          <Image src={emailIcon} alt="" className={styles.img} />
+        </Link>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,39 @@
+.footer {
+  background-color: #282c34; /* Dark background */
+  color: white; /* White text */
+  padding: 20px 0; /* Top and bottom padding */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.logo {
+  margin-bottom: 15px; /* Space between logo and links */
+}
+
+.links {
+  display: flex; /* Horizontal layout for links */
+  justify-content: center; /* Center links */
+  flex-wrap: wrap; /* Allow links to wrap */
+  margin-bottom: 15px; /* Space between links and copyright */
+  gap: 10px;
+}
+
+.link {
+  margin: 0px; /* Space between links */
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.link:hover {
+  color: #61dafb; /* Change color on hover */
+}
+
+.copyRight {
+  font-size: 14px; /* Smaller font for copyright */
+}

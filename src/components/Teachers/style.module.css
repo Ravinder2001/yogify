@@ -37,9 +37,10 @@
 .teacherImage {
   width: 100%;
   height: 70%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 6px;
   margin-bottom: 15px;
+  border-radius: 8px;
 }
 
 .teacherName {
