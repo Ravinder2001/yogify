@@ -9,5 +9,6 @@ let ENVConfig = {
   password: process.env.PASSWORD,
   leadRecevingEmails: process.env.LEAD_RECEIVE_EMAILS,
   mobile: process.env.NEXT_PUBLIC_MOBILE,
+  baseURL: process.env.NEXTAUTH_URL,
 };
 export default ENVConfig;

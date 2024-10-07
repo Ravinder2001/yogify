@@ -6,7 +6,7 @@ import ENVConfig from "../../utils/config";
 // Fetch timings data from the API
 async function fetchTimings() {
   try {
-    const res = await axios.get(`/api/timing`); // Make sure to set the base URL
+    const res = await axios.get(`${ENVConfig.baseURL}/api/timing`); // Make sure to set the base URL
     if (res?.status === 200) {
       return res.data?.data; // Return the fetched timings
     }
