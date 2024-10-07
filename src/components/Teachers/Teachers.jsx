@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./style.module.css";
 import Image from "next/image";
-import { CloudinaryImageURL } from "../../utils/Constant";
+import { CloudinaryImageURL } from "../../utils/constant";
 
 function Teachers() {
   const teachers = [

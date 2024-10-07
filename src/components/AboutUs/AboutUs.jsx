@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./style.module.css";
-import { CloudinaryImageURL } from "../../utils/Constant";
+import { CloudinaryImageURL } from "../../utils/constant";
 
 const AboutUs = () => {
   return (

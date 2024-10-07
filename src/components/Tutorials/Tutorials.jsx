@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { CloudinaryImageURL } from "../../utils/Constant";
+import { CloudinaryImageURL } from "../../utils/constant";
 import styles from "./style.module.css"
 
 function Tutorials() {
