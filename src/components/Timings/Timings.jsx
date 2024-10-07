@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./style.module.css";
 import axios from "axios";
 import ENVConfig from "../../utils/config";
+console.log("🚀  ENVConfig:", ENVConfig)
 
 // Fetch timings data from the API
 async function fetchTimings() {
