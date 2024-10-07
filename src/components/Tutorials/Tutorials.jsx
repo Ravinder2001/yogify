@@ -1,46 +1,40 @@
+"use client";
+
+import Image from "next/image";
 import React from "react";
-import styles from "./style.module.css";
-import HeroVideoDialog from "../../components/magicui/hero-video-dialog";
+import Marquee from "react-fast-marquee";
+import { CloudinaryImageURL } from "../../utils/Constant";
+import styles from "./style.module.css"
 
 function Tutorials() {
-  const classes = [
-    {
-      title: "Hatha Yoga",
-      imgUrl:
-        "https://images.unsplash.com/photo-1617734417481-aafe074f1b86?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      title: "Vinyasa Flow",
-      imgUrl:
-        "https://images.unsplash.com/photo-1593164842249-d74fc06dae05?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      title: "Chakras",
-      imgUrl:
-        "https://images.unsplash.com/photo-1593164842249-d74fc06dae05?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+  let images = [
+    "behpkkh1s8gx0lqlarzi",
+    "jkfepoq66ofwny4yrwyc",
+    "j0lmvqcnvdpg1hwrkjbp",
+    "db917uoizd1hhnqmdd1c",
+    "rsdpdu0l1sxzthdfumkn",
+    "gtu1g3p1lp4j65ks0hxs",
+    "v3go9htmes94wbkfqyos",
+    "hbua6dakwm7plh6ngznk",
+    "zngesufu8aqj3cs8fy3a",
+    "ibuteogiwfpimetqmsdh",
+    "iqq0ofw0iknxy2lnlzts",
+    "dtfm4rd6euvwd7kj8wlf",
+    "qpcjkxvmveqkhpcla9md",
+    "dhhybfzvo65bqcl46xvl",
+    "asel6d9ubornsfux1dal",
+    "pgdr2dde5jpluiooamgd",
+    "n61kn36woxjuxiilhpxj",
   ];
-
   return (
-    <div className={styles.container} id="classes">
-  <div className={styles.heading}>Classes We Offer</div>
-
-  <div className="relative flex flex-wrap justify-center w-[90%] md:w-[80%] mx-auto gap-4">
-    {classes.map((item, index) => (
-      <div className={styles.videoContainer} key={index} data-aos="fade-up">
-        <HeroVideoDialog
-          className="dark:hidden w-full h-full"
-          animationStyle="from-center"
-          videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
-          thumbnailSrc={item.imgUrl}
-          thumbnailAlt="Hero Video"
-        />
-        <div className={styles.videoTitle}>{item.title}</div>
-      </div>
-    ))}
-  </div>
-</div>
-
+    <div id="classes" className={styles.container}>
+      <div className={styles.title}>Our Yoga Journey</div>
+      <Marquee direction="left" style={{ marginTop: "0px" }}>
+        {images.map((image, index) => (
+          <Image className={styles.image} key={index} src={`${CloudinaryImageURL}/${image}.jpg`} alt="" width={200} height={200} />
+        ))}
+      </Marquee>
+    </div>
   );
 }
 

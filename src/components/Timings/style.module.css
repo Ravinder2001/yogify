@@ -45,7 +45,7 @@
 
 .time {
   font-size: 20px;
-  color: #ff6347; /* Tomato color for the time */
+  color: var(--mainColor); /* Tomato color for the time */
   margin-bottom: 10px;
   font-weight: bold;
 }

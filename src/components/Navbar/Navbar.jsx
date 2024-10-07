@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 function Navbar() {
   return (
     <div className={styles.container}>
-      <div className={styles.left}>Yogify.</div>
+      <div className={styles.left}>Breathe Yoga</div>
       <div className={styles.middle}>
         <Link activeClass="active" to="landing" spy={true} smooth={true} offset={-100} duration={1000}>
           <div className={`${styles.label} ${styles.active}`}>Home</div>

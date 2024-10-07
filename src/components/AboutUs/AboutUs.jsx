@@ -1,29 +1,22 @@
-import React from 'react';
-import Image from 'next/image';
-import styles from './style.module.css';
+import React from "react";
+import Image from "next/image";
+import styles from "./style.module.css";
+import { CloudinaryImageURL } from "../../utils/Constant";
 
 const AboutUs = () => {
   return (
-    <div className={styles.container}  data-aos="fade-up" id='about'>
+    <div className={styles.container} data-aos="fade-up" id="about">
       <h1 className={styles.title}>About Us</h1>
       <div className={styles.content}>
         <div className={styles.imageContainer}>
-          <Image 
-            src="https://images.pexels.com/photos/2410573/pexels-photo-2410573.jpeg" 
-            alt="Woman doing yoga" 
-            width={600} 
-            height={400} 
-            className={styles.image}
-          />
+          <Image src={`${CloudinaryImageURL}/behpkkh1s8gx0lqlarzi.jpg`} alt="Woman doing yoga" width={600} height={400} className={styles.image} />
         </div>
         <div className={styles.text}>
-          <h2 className={styles.subtitle}>Welcome To Yogify</h2>
+          <h2 className={styles.subtitle}>Welcome To Breathe Yoga</h2>
           <p className={styles.description}>
-            Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. 
-            Quas Est Pariatur Eius Sit Odio, Voluptatum Delectus Ratione. 
-            Exercitationem, Eum Sit! Lorem Ipsum Dolor, Sit Amet 
-            Consectetur Adipisicing Elit. Iure Illo Enim Ad Cupiditate 
-            Accusantium Consequuntur Cumque Provident Nulla,
+            At Breathe Yoga, we provide expert yoga classes in Delhi and Delhi NCR, helping individuals achieve balance in body and mind through
+            mindful breathing and movement. Whether you&apos;re a beginner or experienced, our certified instructors are dedicated to guiding you on your
+            yoga journey. Join us to enhance your flexibility, reduce stress, and cultivate inner peace.
           </p>
           <button className={styles.button}>Learn More</button>
         </div>

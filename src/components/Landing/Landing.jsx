@@ -1,19 +1,37 @@
+"use client";
 import React from "react";
 import styles from "./style.module.css";
-import YogaCoverImage from "../../assets/images/yoga-cover.jpg";
-import Image from "next/image";
+
+import { CloudinaryVideoURL } from "../../utils/Constant";
 
 function Landing() {
   return (
     <div className={styles.container} id="landing">
-      <Image src={YogaCoverImage} alt="yoga-cover-image" className={styles.image} />
+      <video src={`${CloudinaryVideoURL}/d4l5ezasdlwqxbx8vsdy`} autoPlay muted loop className={styles.video} />
+
       <div className={styles.overlay}></div>
+
       <div className={styles.titleBox}>
-        <div className={styles.title}>Welcome to Yogify</div>
-        <div className={styles.subTitle}>
-          Experience the transformative power of yoga. Whether you&apos;re new or seasoned, our classes help you find balance, strength, and peace.
-          Start your journey to a healthier, more mindful you today.
-        </div>
+        {/* Rotating Text Section */}
+        <section className={styles.rotatingText}>
+          <div className={styles.rotatingText_content}>
+            <div className={styles.title}>Welcome to</div>
+
+            {/* Rotating yoga names */}
+            <h2 className={styles.rotatingText_adjective}>
+              Zen <span className={styles.yoga}>Yoga</span>
+            </h2>
+            <h2 className={styles.rotatingText_adjective}>
+              Balance <span className={styles.yoga}>Yoga</span>
+            </h2>
+            <h2 className={styles.rotatingText_adjective}>
+              Breathe <span className={styles.yoga}>Yoga</span>
+            </h2>
+            <h2 className={styles.rotatingText_adjective}>
+              Harmony <span className={styles.yoga}>Yoga</span>
+            </h2>
+          </div>
+        </section>
       </div>
     </div>
   );
