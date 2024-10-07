@@ -22,29 +22,34 @@ function ContactUs() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if(loading) return;
+    if (loading) return;
     setLoading(true);
     // Sending updated timings to the backend API
-    const res = await axios.post("/api/lead", {
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      message: formData.message,
-    });
-
-    if (res?.status === 200) {
-      Swal.fire({
-        icon: "success",
-        title: res?.data?.message,
+    try {
+      const res = await axios.post("/api/lead", {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
       });
+
+      if (res?.status === 200) {
+        Swal.fire({
+          icon: "success",
+          title: res?.data?.message,
+        });
+      }
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false);
     }
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
-    setLoading(false);
   };
 
   return (

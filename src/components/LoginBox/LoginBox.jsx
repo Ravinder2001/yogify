@@ -64,6 +64,8 @@ function LoginBox() {
       setLoading(false);
     } catch (err) {
       console.log(err);
+    } finally {
+      setLoading(false);
     }
   };
 
