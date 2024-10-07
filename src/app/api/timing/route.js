@@ -52,12 +52,6 @@ export const POST = async (request) => {
 
 export const GET = async () => {
   try {
-    // Get the user session
-    const userSession = await getServerSession(authoptions);
-    if (!userSession) {
-      return new Response("Unauthorized", { status: 401 });
-    }
-
     // Connect to the database
     await connectToDB();
 
